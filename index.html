@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Crumbs | Baker Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/yourkit.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Sweet Crumbs</div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content fade-up">
+        <h1>Crafting Sweet Memories</h1>
+
+        <p>Professional Baker & Commi 2 at Park Hotel</p>
+
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn">View Portfolio</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="section-title">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-container">
+        <div class="about-image">
+          <img src="assets/images/profile/baker.jpg" alt="Baker" />
+        </div>
+
+        <div class="about-content">
+          <h3>Passionate About Baking</h3>
+
+          <p>
+            I am a passionate baker currently working as a Commi 2 at Park
+            Hotel, specializing in artisan desserts, pastries, celebration
+            cakes, and handcrafted bakery creations.
+          </p>
+
+          <p>
+            My goal is to create desserts that not only taste amazing but also
+            leave lasting memories.
+          </p>
+
+          <div class="skills">
+            <span>Cakes</span>
+            <span>Pastries</span>
+            <span>Breads</span>
+            <span>Desserts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio section" id="portfolio">
+      <div class="section-title">
+        <h2>My Portfolio</h2>
+      </div>
+
+      <div class="portfolio-filter">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="cakes">Cakes</button>
+        <button data-filter="pastries">Pastries</button>
+        <button data-filter="desserts">Desserts</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item cakes">
+          <img src="assets/images/cakes/cake1.jpg" alt="" />
+        </div>
+
+        <div class="portfolio-item pastries">
+          <img src="assets/images/pastries/pastry1.jpg" alt="" />
+        </div>
+
+        <div class="portfolio-item desserts">
+          <img src="assets/images/desserts/dessert1.jpg" alt="" />
+        </div>
+
+        <div class="portfolio-item cakes">
+          <img src="assets/images/cakes/cake2.jpg" alt="" />
+        </div>
+
+        <div class="portfolio-item pastries">
+          <img src="assets/images/pastries/pastry2.jpg" alt="" />
+        </div>
+
+        <div class="portfolio-item desserts">
+          <img src="assets/images/desserts/dessert2.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+      <div class="section-title">
+        <h2>Services</h2>
+      </div>
+
+      <div class="services-container">
+        <div class="service-card">
+          <i class="fas fa-birthday-cake"></i>
+          <h3>Custom Cakes</h3>
+          <p>Beautiful cakes for birthdays, weddings and celebrations.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-cookie"></i>
+          <h3>Pastries</h3>
+          <p>Freshly baked pastries made with premium ingredients.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-ice-cream"></i>
+          <h3>Desserts</h3>
+          <p>Elegant desserts crafted for unforgettable experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="section-title">
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="contact-container">
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" id="name" required />
+
+          <input type="email" placeholder="Your Email" id="email" required />
+
+          <textarea placeholder="Your Message" id="message"></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <h3>Sweet Crumbs</h3>
+
+      <p>Made with love & sweetness</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
